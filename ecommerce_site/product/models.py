@@ -5,5 +5,6 @@ from django.db import models
 class Product(models.Model):
     title = models.CharField(max_length=200)
     price = models.FloatField()
-    description = models.TextField(max_length=200)
-    image = models.ImageField()
+    description = models.TextField()
+    image = models.CharField(max_length=200)
+
